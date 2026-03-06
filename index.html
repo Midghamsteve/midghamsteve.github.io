@@ -84,7 +84,13 @@ header {
 .site-name span {
   color: var(--copper);
 }
-
+    /* Keep the contact line on one line (on wider screens) */
+    @media (min-width: 768px) {
+      .contact-line {
+        white-space: nowrap;
+    }
+  }
+    
 .rule {
   display: block;
   width: 60px;
@@ -254,7 +260,7 @@ footer {
   <p>Here is the beginning of the site copperleaves.com</p>
   <p>A space taking shape — content and purpose to follow shortly.</p>
   <p>This site is currently under development and will be updated soon.</p>
-  <p>In the meantime, you are welcome to make contact by email: steve@copperleaves.com.</p>
+  <p class="contact-line">In the meantime, you are welcome to make contact by email: steve@copperleaves.com.</p>
   <p>Thank you for visiting — please do call again.</p>
 </div>
 
